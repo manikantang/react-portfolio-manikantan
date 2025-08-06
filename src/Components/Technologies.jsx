@@ -6,6 +6,7 @@ import { IoLogoTableau } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { SiMicrosoft } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
+import { SiPandas, SiNumpy } from "react-icons/si";
 
 
 const iconVariants = (duration) => ({
@@ -84,13 +85,21 @@ const Technologies = () => {
         >
           <SiMicrosoft className="text-7xl text-blue-500" />
         </motion.div>
+                <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiPandas className="text-7xl text-purple-700" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-        <SiFlask className="text-7xl text-black" />
+          <SiNumpy className="text-7xl text-blue-400" />
         </motion.div>
       </div>
     </div>
