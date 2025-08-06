@@ -4,6 +4,9 @@ import { SiMongodb, SiAmazonaws } from "react-icons/si";
 import { SiOracle,SiExpress } from "react-icons/si";
 import { IoLogoTableau } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { SiMicrosoft } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
+
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -23,6 +26,22 @@ const Technologies = () => {
     <div className="border-b border-neutral-800 pb-24">
       <h2 className="my-20 text-center text-4xl">Technologies</h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiExpress className="text-7xl text-gray-400" />
+        </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
@@ -47,53 +66,31 @@ const Technologies = () => {
         >
           <SiOracle className="text-7xl text-red-500" />
         </motion.div>
+
+        <motion.div
+          variants={iconVariants(6)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <IoLogoTableau className="text-7xl text-rainbow-400" />
+        </motion.div>
+        
         <motion.div
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb className="text-7xl text-green-500" />
+          <SiMicrosoft className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(6)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <IoLogoTableau className="text-7xl text-rainbow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiExpress className="text-7xl text-gray-400" />
-        </motion.div>
-        <motion.div
-  variants={iconVariants(6)}
-  initial="initial"
-  animate="animate"
-  className="rounded-2xl border-4 border-neutral-800 p-4"
->
-  <SiAmazonaws className="text-7xl text-yellow-400" />
-</motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <IoLogoTableau className="text-7xl text-rainbow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <IoLogoTableau className="text-7xl text-rainbow-400" />
+        <SiFlask className="text-7xl text-black" />
         </motion.div>
       </div>
     </div>
