@@ -4,9 +4,8 @@ import { SiMongodb, SiAmazonaws } from "react-icons/si";
 import { SiOracle,SiExpress } from "react-icons/si";
 import { IoLogoTableau } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { SiMicrosoft } from "react-icons/si";
-import { SiFlask } from "react-icons/si";
 import { SiPandas, SiNumpy } from "react-icons/si";
+import { SiAzuredevops } from "react-icons/si";
 
 
 const iconVariants = (duration) => ({
@@ -76,15 +75,6 @@ const Technologies = () => {
         >
           <IoLogoTableau className="text-7xl text-rainbow-400" />
         </motion.div>
-        
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMicrosoft className="text-7xl text-blue-500" />
-        </motion.div>
                 <motion.div
           variants={iconVariants(2)}
           initial="initial"
@@ -101,6 +91,22 @@ const Technologies = () => {
         >
           <SiNumpy className="text-7xl text-blue-400" />
         </motion.div>
+        <motion.div
+            variants={iconVariants(2)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiAmazonaws className="text-7xl text-yellow-500" />
+        </motion.div>
+        <motion.div
+  variants={iconVariants(2)}
+  initial="initial"
+  animate="animate"
+  className="rounded-2xl border-4 border-neutral-800 p-4"
+>
+  <SiAzuredevops className="text-7xl text-blue-400" />
+</motion.div>
       </div>
     </div>
   );
